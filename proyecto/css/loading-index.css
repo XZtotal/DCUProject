@@ -1,0 +1,46 @@
+.menu{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+}
+button{
+    border: none;
+    margin: 5px;
+    border-radius: 30px;
+    height: 45px;
+    font-size: 24px;
+}
+.btnInicioSesion{
+    color:white;
+    background-color: #5BAD96;
+}
+.btnRegistrarse{
+    color:#007F4E;
+    background-color: #BEDDD9;
+}
+.league-spartan-info {
+    font-family: "League Spartan", seri∫f;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+.league-spartan-info p{
+    font-size: 25px;
+}
+.league-spartan-info h1{
+    font-size: 60px;
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: fit-content;
+}

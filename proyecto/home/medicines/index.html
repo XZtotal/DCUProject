@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web con AppContainer</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <style>
+        .medicamento {
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #d9f2ec;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        .medicamento h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #3c6c5a;
+        }
+
+        .medicamento p {
+            margin: 5px 0;
+            color: #4a8068;
+        }
+
+        .proxima-toma {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #4a8068;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 100%;
+            background-color: #4a8068;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3c6c5a;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #e0f3ed;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer div {
+            width: 24px;
+            height: 24px;
+            background-color: #4a8068;
+            border-radius: 50%;
+        }
+
+        header {
+            padding: 15px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            z-index: 2;
+            background-color: #ffffff8c;
+        }
+
+        
+
+        footer {
+            background-color: #f8f8f842;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            flex-shrink: 0;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
+            z-index: 2;
+        }
+
+        .backdrop-blur {
+            backdrop-filter: blur(20px);
+            /* Aplica el desenfoque al fondo */
+            -webkit-backdrop-filter: blur(20px);
+            /* Compatibilidad con Safari */
+        }
+
+        appcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: auto; /* antes era hidden */
+            scrollbar-width: none;
+        }
+        .back-arrow {
+            cursor: pointer;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <appcontainer>
+        <header class="backdrop-blur">
+            <a class="back-arrow" href="../">←</a>
+            Mis Medicamentos
+        </header>
+        <main>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+            <div class="medicamento">
+                <h3>Ibuprofeno 600 mg</h3>
+                <p>Cada 8 horas</p>
+                <div class="proxima-toma">
+                    <span>Próxima Toma: Hoy, 16:00</span>
+                </div>
+                <button>Detalles</button>
+            </div>
+
+        </main>
+        <footer class="backdrop-blur">
+            hola
+        </footer>
+    </appcontainer>
+
+
+</body>
+
+</html>

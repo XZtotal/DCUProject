@@ -1,0 +1,48 @@
+/*
+Colores:
+    - Verde oscuro: 5BAD96
+    - Verde clarito pantalla login/registro: BEDDD9
+    - Verde clarito campos de datos: DFEEE8
+    - Verde letras sobre clarito de registrarse: 007F4E
+    - Verde texto de ejemplo: 4C886F
+    - Verde texto de la aplicacion: 3E837A
+    - Azul Links: 2260FF
+*/
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-fondo: #f5f5f5;
+    --color-texto: #333333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color: #000000;
+}
+
+header {    
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #4a8068;
+}
+
+appcontainer {
+    display: block;
+    /* Asegúrate de que actúe como un contenedor */
+    background-color: #fff;
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
