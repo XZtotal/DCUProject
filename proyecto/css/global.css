@@ -9,10 +9,12 @@ Colores:
     - Azul Links: 2260FF
 */
 :root {
-    --color-primario: #3498db;
-    --color-secundario: #2ecc71;
-    --color-fondo: #f5f5f5;
-    --color-texto: #333333;
+    --color-green1: #5BAD96;
+    --color-green2: #BEDDD9;
+    --color-green3: #DFEEE8;
+    --color-text1: #3E837A;
+    --color-text2: #4C886F;
+    --color-text3: #4a8068;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
