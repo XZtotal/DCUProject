@@ -33,12 +33,12 @@ document.getElementById('password').addEventListener('blur', function() {
 });
 
 document.getElementById('btnInicioSesion').addEventListener('click', function () {
-    window.location.href = "../../home/index.html";
+    window.location.href = "../../home/";
 });
 document.getElementById('register-link').addEventListener('click', function () {
-    window.location.href = "../singup/index.html";
+    window.location.href = "../singup/";
 });
 document.getElementById('back-button').addEventListener('click', function () {
-    window.location.href = "../../index.html";
+    window.location.href = "../../";
 });
     

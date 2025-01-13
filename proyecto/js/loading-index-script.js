@@ -23,8 +23,8 @@ function mostrarInterfaz(){
 setTimeout(mostrarInterfaz, 1500)
 
 document.getElementById('btnInicioSesion').addEventListener('click', function () {
-    window.location.href = "./auth/login/index.html";
+    window.location.href = "./auth/login/";
 });
 document.getElementById('btnRegistrarse').addEventListener('click', function () {
-    window.location.href = "./auth/singup/index.html";
+    window.location.href = "./auth/singup/";
 });
