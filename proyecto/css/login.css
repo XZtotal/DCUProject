@@ -88,8 +88,9 @@ footer a{
     font-size: 24px;
 }
 .titulo-pagina{
+    position: absolute;
     left: 50%;
-    transform: translateX(-55%); 
+    transform: translateX(-50%); 
     font-size: 20px;
     color: #3E837A;
     font-weight: bold;
