@@ -1,9 +1,11 @@
 function mostrarInterfaz(){
     var menu = document.getElementsByClassName('menu')[0];
+    var intro = document.getElementsByClassName('intro')[0];
     var textoLogo = document.getElementsByClassName('league-spartan-info')[0]
     var fondo = document.getElementById('loading')
     var logo = document.getElementsByClassName('logo')[0]
     menu.style.display="flex"
+    intro.style.display="flex"
     textoLogo.style.color="#5BAD96"
     fondo.style.backgroundColor="white"
     logo.innerHTML =  `
@@ -18,7 +20,7 @@ function mostrarInterfaz(){
     </svg>
     `;
 }
-setTimeout(mostrarInterfaz, 3000)
+setTimeout(mostrarInterfaz, 1500)
 
 document.getElementById('btnInicioSesion').addEventListener('click', function () {
     window.location.href = "./auth/login/index.html";
