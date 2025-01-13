@@ -94,9 +94,10 @@ header {
     max-width: 430px;
     margin: 0 auto;
     padding: 13px 15px;
-    background-color: var(--color-green1);
+    background-color: rgba(46, 141, 114, 0.747);
     border-radius: 35px;
     box-shadow: rgba(56, 110, 77, 0.507) 0px 0px 10px;
+    backdrop-filter: blur(10px);
 }
 
 footer {
