@@ -9,28 +9,19 @@
     <link rel="icon" href="../../imgs/logo.png" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-        .medicamento {
-            margin: 20px 10px;
-            padding: 20px 30px;
-            border-radius: 30px;
-            background-color: var(--color-green2);
-            font-size: 14px;
-            font-family: 'League Spartan', sans-serif;
-
-        }
-
-        .medicamento h3 {
+        
+        .card h3 {
             margin: 0 0 5px;
             font-size: 18px;
             color: var(--color-text1);
         }
 
-        .medicamento p {
+        .card p {
             margin: 5px 0;
             color: var(--color-text3);
         }
 
-        .proxima-toma {
+        .card .proxima-toma {
             background-color: #ffffff;
             border-radius: 15px;
             text-align: center;
@@ -42,35 +33,12 @@
             justify-content: space-between;
         }
 
-        .proxima-toma span {
+        .card .proxima-toma span {
             margin-left: auto;
             margin-right: auto;
         }
 
-        button {
-            width: 100%;
-            background-color: var(--color-green1);
-            color: white;
-            border: none;
-            border-radius: 15px;
-            padding: 6px;
-            font-size: 20px;
-            cursor: pointer;
-            font-family: 'League Spartan';
-
-        }
-
-        button:hover {
-            background-color: #3c6c5a;
-        }
-
-
-
-        .back-arrow {
-            cursor: pointer;
-            margin-right: 10px;
-            text-decoration: none;
-        }
+        
     </style>
 </head>
 
@@ -86,7 +54,7 @@
             Mis Medicamentos
         </header>
         <div class="cardcontainer">
-            <div class="medicamento">
+            <div class="card">
                 <h3>Ibuprofeno 600 mg</h3>
                 <p>Cada 8 horas</p>
                 <div class="proxima-toma">
@@ -94,7 +62,7 @@
                 </div>
                 <button>Detalles</button>
             </div>
-            <div class="medicamento">
+            <div class="card">
                 <h3>Ibuprofeno 600 mg</h3>
                 <p>Cada 8 horas</p>
                 <div class="proxima-toma">
@@ -102,7 +70,7 @@
                 </div>
                 <button>Detalles</button>
             </div>
-            <div class="medicamento">
+            <div class="card">
                 <h3>Ibuprofeno 600 mg</h3>
                 <p>Cada 8 horas</p>
                 <div class="proxima-toma">
@@ -110,7 +78,7 @@
                 </div>
                 <button>Detalles</button>
             </div>
-            <div class="medicamento">
+            <div class="card">
                 <h3>Ibuprofeno 600 mg</h3>
                 <p>Cada 8 horas</p>
                 <div class="proxima-toma">
@@ -118,15 +86,7 @@
                 </div>
                 <button>Detalles</button>
             </div>
-            <div class="medicamento">
-                <h3>Ibuprofeno 600 mg</h3>
-                <p>Cada 8 horas</p>
-                <div class="proxima-toma">
-                    <span>Próxima Toma: Hoy, 16:00</span>
-                </div>
-                <button>Detalles</button>
-            </div>
-            <div class="medicamento">
+            <div class="card">
                 <h3>Ibuprofeno 600 mg</h3>
                 <p>Cada 8 horas</p>
                 <div class="proxima-toma">
@@ -153,7 +113,7 @@
                     </svg>
                 </a>
 
-                <a class="homebtn" href="">
+                <a class="homebtn" href="../">
                     <svg width="26" height="30" viewBox="0 0 25 25" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path

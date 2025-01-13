@@ -46,6 +46,15 @@ header {
 
 }
 
+ .back-arrow {
+     cursor: pointer;
+     margin-right: 10px;
+     text-decoration: none;
+     position: absolute;
+     left: 27px;
+     width: 30px;
+ }
+
 /* appcontainer {
     display: block;    
     background-color: #fff;
@@ -86,6 +95,26 @@ header {
     font-size: 14px;
     font-family: 'League Spartan', sans-serif;
 }
+
+ .card button,
+ .card * button {
+     width: 100%;
+     background-color: var(--color-green1);
+     color: white;
+     border: none;
+     border-radius: 15px;
+     padding: 6px;
+     font-size: 20px;
+     cursor: pointer;
+     font-family: 'League Spartan';
+     transition: background-color 0.3s;
+
+ }
+
+ .card button:hover,
+ .card * button:hover {
+     background-color: #3c6c5a;
+ }
 
 .backdrop-blur {
     backdrop-filter: blur(10px);
