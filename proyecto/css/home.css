@@ -45,7 +45,7 @@
   .eventos-titulo {
     margin: 0 0 15px;
     font-size: 25px;
-    font-weight: bold;         /* Ajusta si tu tipografía lo requiere */
+    font-weight: 3000;         /* Ajusta si tu tipografía lo requiere */
     color: var(--color-text1);         /* Tono verde más oscuro */
     font-family: 'League Spartan', sans-serif; /* O tu fuente */
   }
@@ -196,7 +196,7 @@
   .texto-agendar {
     font-size: 28px;
     font-weight: bold;
-    color: #247a6a; /* Verde más oscuro */
+    color: var(--color-text1); /* Verde más oscuro */
     font-family: 'League Spartan', sans-serif; /* Fuente moderna */
   }
   
