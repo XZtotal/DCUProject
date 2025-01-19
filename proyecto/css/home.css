@@ -176,13 +176,19 @@
     border-radius: 15px;
     object-fit: contain; /* Escala la imagen correctamente */
   }
+  .icono1 {
+    width: 110px; /* Ajusta según el tamaño del icono */
+    height: 110px;
+    margin-left: 15px;
+    border-radius: 15px;
+    object-fit: contain; /* Escala la imagen correctamente */
+  }
   
   /* Botón de agendar */
   .boton-agendar {
     display: flex;
     justify-content: flex-start; /* Alinea el contenido hacia el lado izquierdo */
     align-items: center;  
-    padding-left: 15px;
     grid-column: span 2; /* Ocupar ambas columnas */
     width: 335px;
     height: 140px;
