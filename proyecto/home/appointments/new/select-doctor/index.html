@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seleccionar Doctor - Vitacare</title>
-  <link rel="stylesheet" href="../../css/global.css">
-  <link rel="icon" href="../../imgs/logo.png" type="image/png">
+  <link rel="stylesheet" href="../../../../css/global.css">
+  <link rel="icon" href="../../../../imgs/logo.png" type="image/png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
@@ -103,6 +103,7 @@
     .boton-detalles {
       background-color: var(--color-green1);
       flex: 2;
+      border-radius: 15px;
     }
 
     .card * .boton-cancelar {
@@ -121,58 +122,59 @@
 <div class="appcontainer">
 
   <header class="backdrop-blur">
-    <a class="back-arrow" href="../">
+    <a class="back-arrow" href="../../">
       <svg width="15" height="20" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9 1L1 8L9 15" stroke="#3E837A" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
       </svg>
     </a>
     Seleccione Doctor/A
-    <a class="nueva-cita" href="#">
-      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9.63292 0V9.5M9.63292 19V9.5M9.63292 9.5L19 9.5L0 9.5" stroke="#5BAD96" stroke-width="2" />
-      </svg>
-
-    </a>
+    
   </header>
   <div class="cardcontainer">
 
     <div class="card">
       <div class="cita-header">
-        <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
+        <img src="../../../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
         <div class="informacion-doctora">
           <h3 class="nombre-doctora">Dra. Olivia López</h3>
           <p class="especialidad">Traumatología</p>
         </div>
       </div>
       <div class="cita-botones">
-        <button class="boton-detalles">Seleccionar</button>
+        <a class="boton-detalles" href="../accept/">
+          <button>Seleccionar</button>
+        </a>
       </div>
     </div>
 
     <div class="card">
       <div class="cita-header">
-        <img src="../../imgs/users/doctor2.png" alt="Foto de la doctora" class="foto-doctora">
+        <img src="../../../../imgs/users/doctor2.png" alt="Foto de la doctora" class="foto-doctora">
         <div class="informacion-doctora">
           <h3 class="nombre-doctora">Dra. Olivia López</h3>
           <p class="especialidad">Traumatología</p>
         </div>
       </div>
       <div class="cita-botones">
-        <button class="boton-detalles">Seleccionar</button>
+        <a class="boton-detalles" href="../accept/">
+          <button>Seleccionar</button>
+        </a>
       </div>
     </div>
 
     <div class="card">
       <div class="cita-header">
-        <img src="../../imgs/users/doctor3.png" alt="Foto de la doctora" class="foto-doctora">
+        <img src="../../../../imgs/users/doctor3.png" alt="Foto de la doctora" class="foto-doctora">
         <div class="informacion-doctora">
           <h3 class="nombre-doctora">Dra. Olivia López</h3>
           <p class="especialidad">Traumatología</p>
         </div>
       </div>
       <div class="cita-botones">
-        <button class="boton-detalles">Seleccionar</button>
+        <a class="boton-detalles" href="../accept/">
+          <button>Seleccionar</button>
+        </a>
       </div>
     </div>
 

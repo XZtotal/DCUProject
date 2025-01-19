@@ -4,248 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citas - Vitacare</title>
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="icon" href="../../imgs/logo.png" type="image/png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-
-        .proxima-toma {
-            background-color: #ffffff;
-            border-radius: 15px;
-            text-align: center;
-            padding: 5px;
-            margin: 10px 0;
-            font-size: 14px;
-            color: var(--color-text3);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .proxima-toma span {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-       
-
-        .nueva-cita {
-            cursor: pointer;
-            margin-left: 10px;
-            text-decoration: none;
-            position: absolute; 
-            right: 27px; 
-            width: 30px;
-        }
-
-        .cita-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .foto-doctora {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .informacion-doctora {
-            text-align: left;
-        }
-
-        .nombre-doctora {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 0;
-            color: #006666;
-        }
-
-        .especialidad {
-            font-size: 14px;
-            color: #333;
-            margin: 0;
-        }
-
-        .cita-detalles {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #006666;
-            font-size: 13px;
-        }
-        .cita-detalles div {
-            background-color: white;
-            border-radius: 15px;
-            padding: 4px 10px;
-        }
-
-        .cita-botones {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .boton-detalles {            
-            background-color: var(--color-green1);           
-            flex: 2;
-        }
-
-        .card * .boton-cancelar {
-            background-color: #e85d5d;            
-            flex: 1;            
-            transition: background-color 0.3s;
-        }
-
-        .card * .boton-cancelar:hover {
-            background-color: #d14c4c;
-        }
-    </style>
+    <title>Web con AppContainer</title>
+    <link rel="stylesheet" href="../../../css/global.css">
+    <link rel="stylesheet" href="../../../css/detalles-medicos.css">
+    <link rel="icon" href="../../../imgs/logo.png" type="image/png">
 </head>
 
 <body>
     <div class="appcontainer">
-
         <header class="backdrop-blur">
-            <a class="back-arrow" href="../">
+            <a class="back-arrow" href="../" style="position: absolute; left: 27px; width: 30px;">
                 <svg width="15" height="20" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 1L1 8L9 15" stroke="#3E837A" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg>
             </a>
-            Citas
-            <a class="nueva-cita" href="./new/select-doctor/">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.63292 0V9.5M9.63292 19V9.5M9.63292 9.5L19 9.5L0 9.5" stroke="#5BAD96" stroke-width="2" />
-                </svg>
-
-            </a>
+            Detalles Del Medicamento
         </header>
-        <div class="cardcontainer">
-
-            <div class="card">
-                <div class="cita-header">
-                    <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
-                    <div class="informacion-doctora">
-                        <h3 class="nombre-doctora">Dra. Olivia López</h3>
-                        <p class="especialidad">Traumatología</p>
-                    </div>
+        <main>
+            <div class="medicamento">
+                <div class="medicamento-logo">
+                    <svg width="62" height="66" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="62" height="66" fill="url(#pattern0_2057_156)"/>
+                        <defs>
+                        <pattern id="pattern0_2057_156" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_2057_156" transform="matrix(0.0111111 0 0 0.0104377 0 0.030303)"/>
+                        </pattern>
+                        <image id="image0_2057_156" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEWElEQVR4nO2cTahWRRiAH++1e24qpAS5uQqGq1wY+LeoRNyIEJoFLhRqYYiJQhToRuVuCt0ErQRTMyJIRTAvXG4Lf8HKigqJQlCUFqKphNb1B9SJgffAx+U73znn+5nzzpx5YHYf53vn4T0z58y8cyASiUQikUgkEolEIs54Dngd2A2cAP4AbgHjwD3gBvAbcBTYBSwDBt2F5zf9wJvAN8AjwJRsd4FDwNKqO6KVPmADcLkNuVntB2BF1R3TxALg5y4Kntjs3TGLGjMJ+KDNIaJsuwOspqZj8X4HghvbU2CYGpEAIwXl/A3sA9YDS4AhYAB4FngReAXYCHwN/FfwmnuoieTRAjJ+At4CJpe49lTgPeBqgetvo+aS7wDvyPjdLvZZemfO2G+HkVXUVPIFYHYX/3MR8FeL/7stQ1GtJI/Jrd9thuSNMut/j1MjyaPyu14xlJPZ3r/UDMgaRV4mu1ifWNhizP4Rj0kUZPJEdrWI5TU8JFEoGblzrmXE8zmekSiVnLI5I6Z/KowpOMnIk03WG6QXS6uJB5JTjmTEtwPlDCh6uijCpowYD6OYxKNMTlmcEecvKCXxULLl+YxYr6OQAc+Gi4lr4c3itRu+qkg8zeTG/cmnTWK2u+tqSDyXnJYxNIvbli+oIAlAsuXljNh/RwGhSLa8rXXJNCTJloMZffiICvH56aIZz8jOiqp16dAy2bI2ox8PgGlUQIiS+4BfM/pyrIqAQpRsebdFf97AU8nzZMv/C+AzWcixr75VMUfWnJv155Jku1eSB6XU60lGSa2tGHXNtJwiSvu455XkqcCZnGsYx/VvNt5vW8TyfYfFOqWYXKAWrluSjUPZecnzEJiPIybJONqp5NMlJLuQXeQO3YpDPuzwZWQKcLINyWmz51OqeMn60uWQsSCnELBXmWx6mNlFMnmkZJVqR/TlzMTnHEk2XZSt8vl/Q05AL+UMF6e7KLkbslVK7s85/TSeI/lUDyR3IlulZKSSPq/DsyuQbNqQrVYychwsr7PHZfZOmeFIsikhW7Xk6SWOm9kC7o+BT2Qr3jhuw75KRs5tGI/abl83I/YokGdKtr2yc22ZC5zVnMkpRc/3aWuPgZsFfqdCsuVPBdJMj5oaycj3LkyAbazqMXki9xVIMSFncsq4AjEm5ExOKTKh+NLGtEq2XFQgyIQuGalfqFqSCV1y3qFGH9qoxomvGcsVyDIhZ3LKoNRXVC3NhJrJjRxSIM6EmsmNLFUgz4ScyY18p0CiCTWTG1mhQKQJOZPLbmnFTO4Cs+SrXFWLNaFmciOrMw43Rsk9YLsCyWMhTHxFGJbtoiokj4Q6XLR6vr7hWPIBlwWH2ibI8w4EPwS2UHP65bvO93ok+bzLSnsfeAH4tMTngk1Os4fa17ksAPcNW0b2vry2Pykp91/gK2Cl6yNmvjMTWCOlWkflVJOtFbki22RnZIKz32d+Vc5eRyKRSCQSiUQikUgEB/wP8Ckg7dUSCsQAAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
                 </div>
-                <div class="cita-detalles">
-                    <div class="fecha">
-                        <span>📅 Lunes, 23 Diciembre 2024</span>
-                    </div>
-                    <div class="hora">
-                        <span>⏰ 9:30 - 10:00</span>
-                    </div>
-                </div>
-                <div class="cita-botones">
-                    <button class="boton-detalles" onclick="window.location.href='./details/';">Detalles</button>
-                    <button class="boton-cancelar">Cancelar</button>
+                <div class="medicamento-info">
+                    <h2>Ibuprofeno 600mg</h2>
+                    <p>Cada 8 horas</p>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="cita-header">
-                    <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
-                    <div class="informacion-doctora">
-                        <h3 class="nombre-doctora">Dra. Olivia López</h3>
-                        <p class="especialidad">Traumatología</p>
-                    </div>
-                </div>
-                <div class="cita-detalles">
-                    <div class="fecha">
-                        <span>📅 Lunes, 23 Diciembre 2024</span>
-                    </div>
-                    <div class="hora">
-                        <span>⏰ 9:30 - 10:00</span>
-                    </div>
-                </div>
-                <div class="cita-botones">
-                    <button class="boton-detalles" onclick="window.location.href='./details/';">Detalles</button>
-                    <button class="boton-cancelar">Cancelar</button>
-                </div>
+            <hr>
+            <div class="info-toma">
+                <p>Proxima toma: Hoy, 16:00</p>
             </div>
-
-            <div class="card">
-                <div class="cita-header">
-                    <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
-                    <div class="informacion-doctora">
-                        <h3 class="nombre-doctora">Dra. Olivia López</h3>
-                        <p class="especialidad">Traumatología</p>
-                    </div>
-                </div>
-                <div class="cita-detalles">
-                    <div class="fecha">
-                        <span>📅 Lunes, 23 Diciembre 2024</span>
-                    </div>
-                    <div class="hora">
-                        <span>⏰ 9:30 - 10:00</span>
-                    </div>
-                </div>
-                <div class="cita-botones">
-                    <button class="boton-detalles" onclick="window.location.href='./details/';">Detalles</button>
-                    <button class="boton-cancelar">Cancelar</button>
-                </div>
+            <hr>
+            <div class="fechas">
+                <p><span>Fechas</span>
+                    <ul>
+                        <li>Lunes, 18 de Diciembre <br>10:00 AM</li>
+                        <li>Martes, 19 de Diciembre <br>10:00 AM</li>
+                        <li>Miércoles, 20 de Diciembre <br>10:00 AM</li>
+                        <li>Jueves, 21 de Diciembre <br>10:00 AM</li>
+                        <li>Viernes, 22 de Diciembre <br>10:00 AM</li>
+                    </ul>
+                </p>
             </div>
-
-            <div class="card">
-                <div class="cita-header">
-                    <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
-                    <div class="informacion-doctora">
-                        <h3 class="nombre-doctora">Dra. Olivia López</h3>
-                        <p class="especialidad">Traumatología</p>
-                    </div>
-                </div>
-                <div class="cita-detalles">
-                    <div class="fecha">
-                        <span>📅 Lunes, 23 Diciembre 2024</span>
-                    </div>
-                    <div class="hora">
-                        <span>⏰ 9:30 - 10:00</span>
-                    </div>
-                </div>
-                <div class="cita-botones">
-                    <button class="boton-detalles" onclick="window.location.href='./details/';">Detalles</button>
-                    <button class="boton-cancelar">Cancelar</button>
-                </div>
+            <hr>
+            <div class="notas-adicionales">
+                <p><span>Notas Adicionales:</span>
+                    <ul>
+                        <li>Tomar con alimentos</li>
+                        <li>Evitar el alcohol durante el tratamiento</li>
+                        <li>No abandonar el tratamiento antes de su finalización</li>
+                    </ul>
+                </p>
             </div>
-
-            <div class="card">
-                <div class="cita-header">
-                    <img src="../../imgs/users/dr1.png" alt="Foto de la doctora" class="foto-doctora">
-                    <div class="informacion-doctora">
-                        <h3 class="nombre-doctora">Dra. Olivia López</h3>
-                        <p class="especialidad">Traumatología</p>
-                    </div>
-                </div>
-                <div class="cita-detalles">
-                    <div class="fecha">
-                        <span>📅 Lunes, 23 Diciembre 2024</span>
-                    </div>
-                    <div class="hora">
-                        <span>⏰ 9:30 - 10:00</span>
-                    </div>
-                </div>
-                <div class="cita-botones">
-                    <button class="boton-detalles">Detalles</button>
-                    <button class="boton-cancelar">Cancelar</button>
-                </div>
-            </div>
-
-
-            
-
-        </div>
-
-
+        </main>
         <footer>
-
             <div class="mainbar">
                 <a href="">
                     <svg width="26" height="30" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,8 +78,7 @@
                             fill="white" />
                     </svg>
                 </a>
-
-                <a class="homebtn" href="../../home/">
+                <a class="homebtn" href="../">
                     <svg width="26" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.3731 1.38529C12.0316 0.871569 12.9684 0.871569 13.6269 1.38529L23.3217 8.94831C24.6498 9.98437 23.8969 12.0696 22.1948 12.0696L2.80522 12.0696C1.10306 12.0696 0.350224 9.98438 1.67833 8.94831L11.3731 1.38529Z"
@@ -268,7 +88,6 @@
                             fill="white" />
                     </svg>
                 </a>
-
                 <a href="">
                     <svg width="26" height="30" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -286,9 +105,9 @@
                     </svg>
                 </a>
             </div>
-
         </footer>
     </div>
+
 </body>
 
 </html>
